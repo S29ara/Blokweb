@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://misbhv.com/eu/en/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home pagina 1 
+  <img src="readme-images/homescreen_1" width="375px" alt="Het eerste gedeelte van de homescreen met een link naar de sale producten">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home pagina 2 
+  <img src="readme-images/homescreen_2" width="375px" alt="herfst producten 2023">
  
 </details>
 
