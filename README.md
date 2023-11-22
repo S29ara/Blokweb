@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sara Atilgan (vervangen door jouw naam)
+  Sanne 't Hooft (vervangen door jouw naam)
 
   #### Je startniveau:
-  Rood (kies uit zwart, rood óf blauw)
+  hier je startniveau (kies uit zwart, rood óf blauw)
 
   #### Je focus:
-  Liefst beide, maar als ik het niet red qua tijd dan responsive (kies uit responsive óf surface plane)
+  hier je focus (kies uit responsive óf surface plane)
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://misbhv.com/eu/en/
+  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagina 1 
-  <img src="readme-images/homescreen_1" width="375px" alt="Het eerste gedeelte van de homescreen met een link naar de sale producten">
+  hier de naam van de pagina  
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Home pagina 2 
-  <img src="readme-images/homescreen_2" width="375px" alt="herfst producten 2023">
+  hier de naam van de pagina  
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
