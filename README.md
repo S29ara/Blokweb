@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homescreen_2.jpg" width="375px" alt="Tweede gedeelte home page met herfst artikelen">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Woman clothing new arrivals pagina  
   <img src="readme-images/pagina2_woman.jpg" width="375px" alt="Tweede gedeelte home page met herfst artikelen">
  
 </details>
@@ -72,7 +72,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdown_pagina1.jpg" width="375px" alt="breakdown van de hele home pagina">
 
   ### Woman new arrivals pagina: 
-  <img src="readme-images/breakdown_pagina1.jpg" width="375px" alt="breakdown van de hele home pagina">
+  <img src="readme-images/breakdown_pagina2.jpg" width="375px" alt="breakdown van de hele home pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
