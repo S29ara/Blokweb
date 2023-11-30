@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Sara Atilgan">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Blok web website</title>
-	<link rel="stylesheet" href="https://use.typekit.net/mwd0kev.css">
-	<link href="/styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-</head>
-<body>
-	<header>
-		<nav>
-			<input class="menu-button" type="checkbox" id="menu-button"/>
-			<label class="menu-icon" for="menu-button"><span class="navicon"></span></label>
-			<ul>
-				<a><img src="#" alt="Logo MISBHV"></a>
-				<li><a href="#">WOMAN</a></li>
-				<li><a href="#">MEN</a></li>
-				<li><a href="#">SPORT</a></li>
-				<li><a href="#">SALE</a></li>
-				<li><a href="#">SEASONS</a></li>
-				<li><a href="#">RECORDINGS</a></li>
-				<li><input></li>
-				<li><a href="#">LOGIN</a></li>
-				<li><a href="#">SHOPPING BAG</a></li>
-			</ul>
-		</nav>
-	</header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sara Atilgan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blok web website</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mwd0kev.css" />
+    <link href="/styles/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  </head>
+  <body>
+    <header>
+      <a href="#"><img class="logo" src="#" alt="Logo misbhv" /></a>
+      <a href="#"><img src="#" /></a>
+      <a href="#"><img src="#" /></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="#">WOMAN</a></li>
+          <li><a href="#">MEN</a></li>
+          <li><a href="#">SPORT</a></li>
+          <li><a href="#">SALE</a></li>
+          <li><a href="#">SEASONS</a></li>
+          <li><a href="#">RECORDINGS</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+    <main>
+      <section class="blackweek_section">
+        <a href="#">
+          <h1>MISBHV | Club Wear Solutions</h1>
+          <h2>Black week sale</h2>
+          <p>Discount on selected items with black week label</p>
+          <span>See items</span>
+          <img
+            src="/images/banner_landingspage.png"
+            alt="A photo of 5 models wearing black week sale items" />
+        </a>
+      </section>
+    </main>
 
-	<script defer src="/scripts/script.js"></script>
-</body>
+    <script defer src="/scripts/script.js"></script>
+  </body>
 </html>

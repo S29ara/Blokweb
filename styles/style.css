@@ -7,6 +7,22 @@
 	padding: 0;
 }
 
+@font-face {
+	font-family: "atHaussMonoRegular";
+	src: url(/fonts/AtHaussMono-Regular.ttf);
+}
+
+@font-face {
+	font-family: "atHaussMonoBold";
+	src: url(/fonts/AtHaussMono-Bold.ttf);
+}
+
+@font-face {
+	font-family: "akkuratMono";
+	src: url(/fonts/akkurat_mono.OTF);
+}
+
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -14,9 +30,10 @@
 :root {
 	/* startje */
 	--color-text:rgb(255, 255, 255);
-	--background-color: rgb(0, 0, 0);
+	--background-color-header: rgb(0, 0, 0);
+	--font-family1: "futura-pt", sans-serif;
+	--font-family-body: "akkuratMono", sans-serif;
 }
-
 
 /****************/
 /* JOUW STYLING */
@@ -25,6 +42,200 @@
 /* jouw code */
 /*Nav hamburger menu */
 /*  bron: https://codepen.io/mutedblues/pen/MmPNPG*/
+/* https://alvarotrigo.com/blog/hamburger-menu-css/*/
+
+/* bron responsive menu: https://www.youtube.com/watch?v=8QKOaTYvYUA */
+
+/* navigation styles start */
+
+header {
+	background: var(--background-color-header);
+	position: fixed;
+	height: 8vh;
+	text-align: center;
+	z-index: 999;
+	width: 100%;
+}
+
+
+.nav-toggle{
+	display: none;
+}
+
+.nav-toggle-label{
+	color: var(--color-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 1em;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+
+/* hamburger lines */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+	display: block;
+	background: white;
+	height: 2px;
+	width: 2em;
+	border-radius: 2px;
+	position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+	content: '';
+	position: absolute;
+}
+
+.nav-toggle-label span::before {
+	bottom: 8px;
+}
+
+.nav-toggle-label span::after {
+	top: 8px;
+}
+
+/* animation menu burger */
+input[type="checkbox"]:checked ~  .nav-toggle-label {
+	transform: translateX(0) ;
+}
+
+nav {
+	position: absolute;
+	text-align: left;
+	top: 100%;
+	left: 0;
+	background-color: var(--background-color-header);
+	width: 100%;
+	transform: scale(1, 0);
+	transform-origin: top;
+	transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	margin: 1em;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-family: var(--font-family1);
+	text-transform: uppercase;
+	opacity: 0;
+	transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+.nav-toggle:checked ~ nav {
+	transform: scale(1,1) ;
+}
+
+.nav-toggle:checked ~ nav a {
+	opacity: 1;
+	transition: opacity 250ms ease-in-out 250ms;
+}
+
+.blackweek_section a {
+	text-decoration: none;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 2fr 1fr 1fr 1fr;
+	height: 80vh;
+	position: relative;
+}
+
+.blackweek_section h1 {
+	position: relative;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	text-align: center;
+	/* color: var(--color-text); */
+	font-family: var(--font-family1);
+	font-weight: 400;
+	font-size: 1em;
+	color: var(--color-text);
+	align-self: center;
+	z-index: 2;
+}
+
+.blackweek_section h2 {
+	position: relative;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	text-align: center;
+	font-family: var(--font-family1);
+	font-weight: bolder;
+	font-size: 2.5em;
+	color: var(--color-text);
+	/* color: white; */
+	text-shadow: 0 0 2px #fff,  0 0 5px #fff, 0 0 30px #fff, 0 0 0px #fff;
+	z-index: 2;
+}
+
+.blackweek_section p {
+	position: relative;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	margin: 1em 1.5em 0em 1.5em;
+	text-align: center;
+	font-family: var(--font-family-body);
+	font-size: 0.8em;
+	color: var(--color-text);
+	/* color: var(--color-text); */
+	align-self: center;
+	z-index: 2;
+}
+
+.blackweek_section span {
+	position: relative;
+	grid-row-start: 3;
+	grid-column-start: 1;
+	text-align: center;
+	font-family: var(--font-family-body);
+	color: var(--color-text);
+	align-self: flex-start;
+	justify-content: center;
+	align-self: flex-start;
+	z-index: 2;
+}
+
+
+.blackweek_section img {
+	position: relative;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: -1;
+	width: 100%;
+	object-fit: cover;
+	position: relative;
+	/*opacity: 0.5;*/
+	z-index: 0;
+}
+
+
+/* responsive bigger screen */
+@media screen and ( min-width: 50em ) {
+	.nav-toggle-label {
+		display: none;
+	}
+
+}
 
 
 
