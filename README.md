@@ -50,7 +50,7 @@ MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
   <img src="readme-images/homescreen_5.jpg" width="375px" alt="Men or woman section">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Woman clothing new arrivals pagina  
+  All woman clothing pagina
   <img src="readme-images/pagina2_woman.jpg" width="375px" alt="Tweede gedeelte home page met herfst artikelen">
  
 </details>
@@ -64,6 +64,11 @@ MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  <ul>
+  <li>Er zijn vele vormen van slechtziend zijn</li>
+    <li>Meerdere vormen van beperkt zijn</li>
+    <li>Veel websites maken nog geen gebruik van een duidelijke opzet (code) voor screenreaders</li>
+  </ul>
 
 </details>
 
@@ -72,15 +77,24 @@ MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <summary>Ik wil verschillende elementen aanpassen. 
+    Zo heb ik een logischer volgorde gemaakt van de content die ik op de homepagina wil laten zien</summary>
 
   ### Homepagina: 
   <img src="readme-images/breakdown_pagina1.jpg" width="375px" alt="breakdown van de hele home pagina">
 
-  ### Woman new arrivals pagina: 
-  <img src="readme-images/breakdown_pagina2.jpg" width="375px" alt="breakdown van de hele home pagina">
+<details>
+  <summary>De tekst met ‘new in’ of ‘black week’ lijken op knoppen dus wil ik die veranderen in een label. 
+    Verder wil ik ‘voeg toe aan winkelmand’ knoppen toevoegen.</summary>
 
- 
+  ### All woman clothing: 
+  <img src="readme-images/breakdown_pagina2.jpg" width="375px" alt="breakdown van de tweede pagina">
+
+<details>
+  <summary>De menu items wil ik alleen verticaal aan de linkerkant uitlijnen. Verder wil ik deze links ook hover states geven en via mobiele formaat een state toepassen aan de links zodat de gebruiker weet op welke pagina hun zijn. </summary>
+
+  ### Navigatie menu: 
+  <img src="readme-images/menu_misbhv.png" width="375px" alt="menu">
 
 </details>
 
@@ -91,29 +105,25 @@ MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
 ## Voortgang 1 (week 2)
 
 <details>
-  <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
+  <summary>Ik begon met het maken van een navigatie menu met alle items. Het begin ging een beetje stroef, omdat ik al een tijdje niet bezig ben geweest met coderen. Ik heb daarom ook veel onderzoek gedaan naar verschillende responsive nav menu’s. Voor mijn mobiele formaat wil ik gebruik maken van een hamburger menu. Het liefst zonder Javascript.</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
+  Na een tijdje zoeken kwam ik uit op een code voor een responsive hamburger menu via codepen: 
+  
+  Deze code begreep ik en ik wist deze goed toe te passen. Het probleem was is dat deze persoon block elementen gebruikt en ook display:float bij een block 
+  element. Ik probeerde de code zelf een beetje aan te passen, zodat het wel semantisch correct is en geen fout meldingen geeft. Dit werkte niet. Ik kreeg 
+  uiteindelijk ook mijn li elementen niet meer te zien. Ik had blijkbaar iets niet goed gedaan dus ben op zoek gegaan naar een andere code.
+  
+  bron hamburger menu codepen: [https://codepen.io/mutedblues/pen/MmPNPG](https://codepen.io/mutedblues/pen/MmPNPG)
+</details>
+<details>
+Omdat er vaak gebruik wordt gemaakt van divs en heel veel classes vond ik het lastig om dit niet te gebruiken of weg te halen. Ik denk het de reden is dat sommige uitgewerkte code’s niet correct waren (vanwege verkeerde elementen selecteren in css). Ik heb namelijk gebruik gemaakt van een andere code (zie bron hieronder). In het begin ging het best prima, maar uiteindelijk gingen alle li elementen naar boven schuiven wanneer ik dus het menu ging uitklappen (iets met height en position te maken?). Ook gingen de hamburger menu lines raar bewegen en vormde ze geen x wanneer het menu is uitgeklapt. 
 
+bron hamburger menu css: [https://alvarotrigo.com/blog/hamburger-menu-css](https://alvarotrigo.com/blog/hamburger-menu-css)
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  <img src="readme-images/menu1.png" width="375px" alt="breakdown van de hele home pagina">
 
 </details>
 
