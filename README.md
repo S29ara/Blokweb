@@ -589,6 +589,14 @@ closeIcon.addEventListener("click", function () {
 })
 
 ```
+### Aangepaste elementen
+<details>
+<summary>Ik heb een aantal onderdelen aangepast, zodat het dan op groter formaat makkelijk is aan te passen. Zo heb ik de fall collection items in een ol geplaatst en heb ik de list items een scroll functie gegeven op kleiner formaat. Ook heb ik de newsletter form in de footer geplaatst zodat het 1 onderdeel is. Tot slot heb ik op pagina 2 alle woman clothing items ook in een ol geplaatst en display grid op de container gezet.</summary>
+
+<p>Aanpassingen:</p>
+
+<img src="readme-images/" width="375px" alt="">
+
  
 </details>
 
