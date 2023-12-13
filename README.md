@@ -595,13 +595,23 @@ closeIcon.addEventListener("click", function () {
 
 <p>Aanpassingen:</p>
 
-<img src="readme-images/" width="375px" alt="">
+<img src="readme-images/footer.jpg" width="375px" alt="">
+##
+<img src="readme-images/secondpage.jpg" width="375px" alt="">
 
- 
 </details>
 
-
-
+### Verbeteringen
+<details>
+	<summary>Welke toegankelijkheid verbeteringen zijn gelukt?</summary>
+	<ul>
+		<li>Gebruik gemaakt van meerdere headings op logische volgorde</li>
+		<li>Meerdere navigatie elementen</li>
+		<li>Knoppen toegevoegd die als een knop werken</li>
+		<li>focus states aan buttons toegepast</li>
+		<li>images met alt text</li>	
+	</ul>
+</details>
 
 
 
@@ -610,23 +620,13 @@ closeIcon.addEventListener("click", function () {
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
-
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Ik heb geleerd hoe ik het beste content kan plaatsen op een klein en groot scherm (grid, flexbox etc...). Verder ging het uitwerken van de clothing list items goed. Op de tweede pagina werkte de display grid snel uit en hoefde ik weinig aanpassingen te maken. Tot slot heb ik geleerd wat aria-labels zijn en hoe ik het beste deze kan toepassen.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
-
-
+Ik heb heel veel moeite gehad om een reponsive animated hamburger menu te maken. Het is daarom ook niet gelukt om de hamburger in een x te laten veranderen wanneer het menu is uitgeklapt (ik weet soort van hoe ik dit kan doen). Ook wou ik nog de 'load more items' knop laten werken en meer items laten zien. Verder wou ik nog dark & light modus toepassen, maar ik had hier geen tijd meer voor. 
+  
 
 
 
@@ -639,8 +639,12 @@ closeIcon.addEventListener("click", function () {
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [https://codepen.io/mutedblues/pen/MmPNPG](https://codepen.io/mutedblues/pen/MmPNPG)
+  2. [https://medium.com/@saoliveri95/basic-design-system-button-states-4774853048f2](https://medium.com/@saoliveri95/basic-design-system-button-states-4774853048f2)
+  3. [https://css-tricks.com/css-only-carousel/](https://css-tricks.com/css-only-carousel/)
+  4. [https://alvarotrigo.com/blog/hamburger-menu-css](https://alvarotrigo.com/blog/hamburger-menu-css)
+  5. [https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535t](https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535t)
+  6. [https://codepen.io/shooft/pen/VwqYdPY](https://codepen.io/shooft/pen/VwqYdPY)
+  7. [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 </details>
