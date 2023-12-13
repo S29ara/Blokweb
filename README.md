@@ -535,13 +535,22 @@ bron: [https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-w
 <img src="readme-images/navmenu2_smallscreen.png" width="375px" alt="">
 ##
 <img src="readme-images/navmenu2_bigscreen.png" width="375px" alt="">
-
-
-
-
-
-
 	
+</details>
+
+### Final  
+<details>
+<summary>Aan de hand van feedback van Marten heb ik geprobeerd het navigatie menu aan te passen, zodat de elementen op de juiste plek gepositioneerd zijn en logisch is qua volgorde in mijn html</summary>
+
+<p>Tips van Marten</p>
+
+<img src="readme-images/schets_marten2.jpg" width="375px" alt="">
+#
+<img src="readme-images/schets_marten2.2.jpg" width="375px" alt="">
+
+<p>Ik heb geprobeerd om de items in een logische volgorde te zetten en alle elementen in de nav te zetten. Omdat items ze allemaal classes hadden heb ik geprobeerd de classes weg te halen. Dit werd heel chaotisch en ik wist niet meer hoe ik dit kon fixen. Ik heb het uiteindelijk weggehaald.</p>
+
+ 
 </details>
 
 
