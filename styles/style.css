@@ -382,7 +382,7 @@ section ul li a:focus {
 	display: none;
 }
 
-/* fall collection two items section */
+/* fall collection 4 items section */
 /* scroll gallery */
 /* bron : https://css-tricks.com/css-only-carousel/ */
 
@@ -577,7 +577,7 @@ section ul li a:focus {
 }
 
 
-.newsletter_section h1 {
+.newsletter_section h2 {
 	align-self: center;
 	margin: auto;
 
@@ -656,14 +656,6 @@ section ul li a:focus {
 	font-size: var(--font-size-kop-mobiel);
 }
 
-.main_secondpage > h2 {
-	padding-left: 0.5em;
-	padding-top: 1.5em;
-
-	/*styling*/
-	font-family: var(--font-family-body);
-	font-size: var(--font-size-body-mobiel);
-}
 
 .main_secondpage > h3 {
 	padding-right: 0.5em;
@@ -675,7 +667,28 @@ section ul li a:focus {
 	font-size: var(--font-size-body-mobiel);
 }
 
+/* filter icon */
 
+.main_secondpage .filter {
+	display: flex;
+	gap: 0.5em;
+	margin-left: 1em;
+	padding: 0.5em 1em 0.5em 1em;
+	width: 11em;
+
+	/*styling*/
+	border: 2px solid var(--color-specialelement);
+	background-color: #fff;
+	font-family: var(--font-family-kop);
+	color: var(--color-specialelement);
+}
+
+.main_secondpage > img {
+	width: 12em;
+	height: auto;
+}
+
+/* grid woman items */
 .allwoman_section {
 	display: grid;
 	height: 100%;
@@ -835,6 +848,13 @@ footer nav ul img {
 	height: auto;
 	margin: 0;
 }
+
+footer .arrowDown {
+	display: flex;
+	margin-left: auto;
+
+}
+
 
 
 /* responsive desktop */
@@ -1029,6 +1049,13 @@ footer nav ul:nth-of-type(4) {
 
 footer nav ul li a:hover {
 	text-decoration: underline;
+}
+
+footer .arrowDown {
+	display: flex;
+	align-items: center;
+	margin: auto;
+
 }
 
 }
