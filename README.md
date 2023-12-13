@@ -567,8 +567,24 @@ bron: [https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-w
 ##
 <img src="readme-images/navmenu3_onderlogo.jpg" width="375px" alt="">
 
-<p>Vervolgens heeft Abby mij geholpen om de elementen met flexbox uit te lijnen.</p>
+<p>Vervolgens heeft Abby mij geholpen om de elementen met flexbox uit te lijnen. Uiteindelijk heb ik door de hulp van Abby de list items precies onder het logo kunnen uitlijnen en de (log in, sign up, search icon & shopping bag) helemaal aan de rechterkant gepositioneerd</p>
 
+<details>
+<p>Ik heb daarna wat styling properties toegepast aan mijn nav elementen en ik heb vervolgens het menu een uitklap functie gegeven via javascript.</p>
+
+
+<img src="readme-images/navmenu3_onderlogo.jpg" width="375px" alt="">
+
+```js
+openIcon.addEventListener("click", function () {
+    openMenu.classList.toggle("hidden");
+});
+
+closeIcon.addEventListener("click", function () {
+    openMenu.classList.toggle("hidden");   
+})
+
+```
  
 </details>
 
