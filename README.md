@@ -282,14 +282,13 @@ body {
   display: none;
 }
 ```
-
+<details>
 <p>Mijn eigen code:</p>
- #### Css code
 
  <img src="readme-images/menu1.3.png" width="375px" alt="code eerste nav menu">
- ##
+ 
  <img src="readme-images/menu1.2.png" width="375px" alt="code tweede nav menu">
- ##
+
  <img src="readme-images/menu1.1.png" width="375px" alt="code derde nav menu">
 
 
@@ -309,16 +308,17 @@ body {
 
    <img src="readme-images/section_blacweek1.png" width="375px" alt="section black week code">
 
+   <details>
   <p>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </p>
+  
    <img src="readme-images/schets1_marten.jpeg" width="375px" alt="section black week code">
-  ##
    <img src="readme-images/section_blackweek1.2.png" width="375px" alt="section black week code">
-  ##
    <img src="readme-images/section_blackweek1.3.png" width="375px" alt="section black week code">
+
+   <details>
    
 <p>Ik ben vervolgens later nog is naar de code gaan kijken met Abby. Ik dacht misschien dat het aan de height lag en dat klopte ook.  Ik had de height weggehaald en de rows aangepast. Nu stond alles op de juiste plek.</p>
 <img src="readme-images/section_blackweek1.4.png" width="375px" alt="section black week code">
-##
 <img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
   
 
