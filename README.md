@@ -35,7 +35,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
-  Ik ga proberen een verbeterde versie maken van de website: 
+  Ik ga proberen een verbeterde versie te maken van de website: 
 
 [MISBHV | Club Wear Solutions™](https://misbhv.com/eu/en/)
 
@@ -112,7 +112,7 @@ MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
   
   Na een tijdje zoeken kwam ik uit op een code voor een responsive hamburger menu via codepen: 
   
-  Deze code begreep ik en ik wist deze goed toe te passen. Het probleem was is dat deze persoon block elementen gebruikt en ook display:float bij een block 
+  Deze code begreep ik en ik wist deze goed toe te passen. Het probleem was dat deze persoon block elementen gebruikt en ook display:float bij een block 
   element. Ik probeerde de code zelf een beetje aan te passen, zodat het wel semantisch correct is en geen fout meldingen geeft. Dit werkte niet. Ik kreeg 
   uiteindelijk ook mijn li elementen niet meer te zien. Ik had blijkbaar iets niet goed gedaan dus ben op zoek gegaan naar een andere code.
   
@@ -310,7 +310,7 @@ body {
   ### black week section
    <img src="readme-images/section_blackweek1.png" width="375px" alt="section black week code">
 
-  <p>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </p>
+  <p>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging in eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </p>
   
    <img src="readme-images/schets1_marten.jpg" width="375px" alt="schets Marten">
    ##
@@ -318,7 +318,7 @@ body {
    ##
    <img src="readme-images/section_blackweek1.3.png" width="375px" alt="section black week code">
    
-<p>Ik ben vervolgens later nog is naar de code gaan kijken met Abby. Ik dacht misschien dat het aan de height lag en dat klopte ook. Ik had de height weggehaald en de rows aangepast. Nu stond alles op de juiste plek.</p>
+<p>Ik ben vervolgens later nog eens naar de code gaan kijken met Abby. Ik dacht misschien dat het aan de height lag en dat klopte ook. Ik had de height weggehaald en de rows aangepast. Nu stond alles op de juiste plek.</p>
 <img src="readme-images/section_blackweek1.4.png" width="375px" alt="section black week code">
 ##
 <img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
@@ -334,7 +334,7 @@ body {
 ##
 <img src="readme-images/twoitems_2.png" width="375px" alt="fall collection two items">
 
-<p>Ik heb verschillende dingen geprobeerd, maar nog steed kwam de img en de andere child elementen niet op de juiste plek te staan. Hier raakte ik gefrustreerd van, maar ik bleef het proberen.</p>
+<p>Ik heb verschillende dingen geprobeerd, maar nog steeds kwam de img en de andere child elementen niet op de juiste plek te staan. Hier raakte ik gefrustreerd van, maar ik bleef het proberen.</p>
 <img src="readme-images/twoitems_3.png" width="375px" alt="fall collection two items">
 
 <p>Ik heb toen ook classes gebruikt voor de images, omdat ik misschien dacht dat ik de verkeerde css properties had genoteerd.</p>
@@ -625,7 +625,7 @@ Ik heb geleerd hoe ik het beste content kan plaatsen op een klein en groot scher
 
 
   ### Dit was lastig/Is niet gelukt:
-Ik heb heel veel moeite gehad om een reponsive animated hamburger menu te maken. Het is daarom ook niet gelukt om de hamburger in een x te laten veranderen wanneer het menu is uitgeklapt (ik weet soort van hoe ik dit kan doen). Ook wou ik nog de 'load more items' knop laten werken en meer items laten zien. Verder wou ik nog dark & light modus toepassen, maar ik had hier geen tijd meer voor. 
+Ik heb heel veel moeite gehad om een reponsive animated hamburger menu te maken. Het is daarom ook niet gelukt om de hamburger in een x te laten veranderen wanneer het menu is uitgeklapt (ik weet globaal hoe ik dit kan doen). Ook wou ik nog de 'load more items' knop laten werken en meer items laten zien. Verder wou ik nog dark & light modus toepassen, maar ik had hier geen tijd meer voor. 
   
 
 
