@@ -1,6 +1,8 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+
+
 *, *::after, *::before {
 	box-sizing:border-box;
 	margin: 0;
@@ -29,176 +31,203 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:rgb(255, 255, 255);
+	--color-text-db:white;
+	--color-text-lb: black;
 	--background-color-header: rgb(0, 0, 0);
-	--font-family1: "futura-pt", sans-serif;
+	--font-family-kop: "futura-pt", sans-serif;
 	--font-family-body: "akkuratMono", sans-serif;
+	--font-size-body-mobiel: 1em;
+	--font-size-body-desktop: 1.3em;
+	--font-size-kop-mobiel: 2em;
+	--font-size-kop-desktop: 2.3em;
+	--font-size-items-mobiel: 1.2em;
+	--color-specialelement:  rgb(49, 96, 92);
+	--color-darkmode1: rgb(40, 46, 44);
+	--letter-spacing: 0.1em;
+	--font-family-body-bold: "atHaussMonoBold", sans-serif;
 }
+
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main_secondpage {
+	margin-top: 12vh;
+}
+
 /*Nav hamburger menu */
-/*  bron: https://codepen.io/mutedblues/pen/MmPNPG*/
-/* https://alvarotrigo.com/blog/hamburger-menu-css/*/
+/* hulp van Abby met het maken van een responsive hamburger menu */
 
-/* bron responsive menu: https://www.youtube.com/watch?v=8QKOaTYvYUA */
-
-/* navigation styles start */
+/* styling nav menu*/
+@media screen and (max-width: 55em) {
+	
+	header nav > ul li:first-of-type,
+	header nav > ul li:nth-of-type(2) {
+	display: none;
+}
+}
 
 header {
-	background: var(--background-color-header);
+	top: 0;
 	position: fixed;
-	height: 8vh;
-	text-align: center;
-	z-index: 999;
 	width: 100%;
+	padding: 1.5em;
+	background-color: var(--background-color-header);
+	z-index: 999;
 }
 
 
-.nav-toggle{
+header nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	gap: 1em;
+}
+
+
+header a img {
+	width: 6em;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul {
+	list-style-type: none;
+	font-size: var(--font-size-body-mobiel);
+	font-family: var(--font-family-body);
+}
+
+header nav a {
+	color: var(--color-text-db);
+	text-decoration: none;
+	flex-grow: 1;
+}
+
+header nav > ul {
+	display: flex;
+	gap: 1em;
+}
+
+header nav ul img {
+	width: 1.5em;
+}
+
+header nav section {
+	width: 100vw;
+}
+
+section ul li {
+	padding: 1em;
+	border-bottom: 1px solid white;
+}
+
+section ul li a:active {
+	background-color: var(--color-specialelement);
+}
+
+section ul li a:focus {
+	background-color: var(--color-specialelement);
+}
+
+.shopping_bag span {
+	position: absolute;
+}
+
+
+/* hide menu items*/
+.hidden {
 	display: none;
 }
 
-.nav-toggle-label{
-	color: var(--color-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 1em;
-	height: 100%;
-	display: flex;
-	align-items: center;
+.hidden h2 {
+	display: none;
 }
 
-
-/* hamburger lines */
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-	display: block;
-	background: white;
-	height: 2px;
-	width: 2em;
-	border-radius: 2px;
-	position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-	content: '';
-	position: absolute;
-}
-
-.nav-toggle-label span::before {
-	bottom: 8px;
-}
-
-.nav-toggle-label span::after {
-	top: 8px;
-}
-
-/* animation menu burger */
-input[type="checkbox"]:checked ~  .nav-toggle-label {
-	transform: translateX(0) ;
-}
-
-nav {
-	position: absolute;
-	text-align: left;
-	top: 100%;
-	left: 0;
-	background-color: var(--background-color-header);
-	width: 100%;
-	transform: scale(1, 0);
-	transform-origin: top;
-	transition: transform 400ms ease-in-out;
-}
-
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-nav li {
-	margin: 1em;
-}
-
-nav a {
+.hamburger {
+	cursor: pointer;
 	color: white;
-	text-decoration: none;
-	font-size: 1.2rem;
-	font-family: var(--font-family1);
-	text-transform: uppercase;
-	opacity: 0;
-	transition: opacity 150ms ease-in-out;
+	background-color: transparent;
+	border: none;
+	width: 1.5em;
 }
 
-nav a:hover{
-	text-decoration: underline;
+.hamburger .closeIcon {
+	display: none;
 }
 
-.nav-toggle:checked ~ nav {
-	transform: scale(1,1) ;
-}
+/* eerste gedeelte homepagina (black week sale) */
 
-.nav-toggle:checked ~ nav a {
-	opacity: 1;
-	transition: opacity 250ms ease-in-out 250ms;
+.blackweek_section {
+	height: 50%;
 }
 
 .blackweek_section a {
 	text-decoration: none;
 	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 2fr 1fr 1fr 1fr;
-	height: 80vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	position: relative;
 }
 
 .blackweek_section h1 {
 	position: relative;
 	grid-column-start: 1;
-	grid-row-start: 1;
+	grid-row-start: 2;
 	text-align: center;
-	/* color: var(--color-text); */
-	font-family: var(--font-family1);
-	font-weight: 400;
-	font-size: 1em;
-	color: var(--color-text);
-	align-self: center;
+	align-self: flex-start;
 	z-index: 2;
+
+	/* styling */
+	letter-spacing: var(--letter-spacing);
+	font-family: var(--font-family-kop);
+	font-weight: 400;
+	font-size: var(--font-size-body-mobiel);
+	color: var(--color-text-db);
 }
 
 .blackweek_section h2 {
 	position: relative;
 	grid-column-start: 1;
-	grid-row-start: 2;
+	grid-row-start: 3;
 	text-align: center;
-	font-family: var(--font-family1);
-	font-weight: bolder;
-	font-size: 2.5em;
-	color: var(--color-text);
-	/* color: white; */
-	text-shadow: 0 0 2px #fff,  0 0 5px #fff, 0 0 30px #fff, 0 0 0px #fff;
 	z-index: 2;
+	align-self: flex-start;
+
+	/*styling*/
+	text-transform: uppercase;
+	letter-spacing: var(--letter-spacing);
+	font-family: var(--font-family-kop);
+	font-weight: bolder;
+	font-size: var(--font-size-kop-mobiel);
+	color: var(--color-text-db);
+	text-shadow: 0 0 0px #fff,  0 0 5px #fff, 0 0 30px #fff, 0 0 0px #fff;
 }
 
 .blackweek_section p {
 	position: relative;
 	grid-column-start: 1;
-	grid-row-start: 2;
-	margin: 1em 1.5em 0em 1.5em;
+	grid-row-start: 3;
+	margin: 2em 2em 0em 2em;
 	text-align: center;
-	font-family: var(--font-family-body);
-	font-size: 0.8em;
-	color: var(--color-text);
-	/* color: var(--color-text); */
 	align-self: center;
 	z-index: 2;
+
+	/* styling */
+	line-height: 1.2em;
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-body-mobiel);
+	color: var(--color-text-db);
 }
 
 .blackweek_section span {
@@ -206,16 +235,19 @@ nav a:hover{
 	grid-row-start: 3;
 	grid-column-start: 1;
 	text-align: center;
-	font-family: var(--font-family-body);
-	color: var(--color-text);
-	align-self: flex-start;
+	align-self: flex-end;
 	justify-content: center;
-	align-self: flex-start;
+	margin: 2em 0em 0em 0em;
 	z-index: 2;
+
+	/*styling*/
+	text-decoration: underline;
+	font-family: var(--font-family-body-bold);
+	font-size: var(--font-size-body-mobiel);
+	color: var(--color-text-db);
 }
 
-
-.blackweek_section img {
+.blackweek_section img:first-of-type {
 	position: relative;
 	grid-column-start: 1;
 	grid-column-end: -1;
@@ -223,24 +255,780 @@ nav a:hover{
 	grid-row-end: -1;
 	width: 100%;
 	object-fit: cover;
-	position: relative;
-	/*opacity: 0.5;*/
 	z-index: 0;
 }
 
-
-/* responsive bigger screen */
-@media screen and ( min-width: 50em ) {
-	.nav-toggle-label {
-		display: none;
-	}
-
+.blackweek_section img:last-of-type {
+	display: none;
 }
 
 
+/* men & woman section */
+
+.woman_men_section a {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	text-decoration: none;
+}
+
+.woman_men_section h1 {
+	position: relative;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	align-self: center;
+	text-align: center;
+	z-index: 2;
+
+	/* styling*/
+	color: black;
+	font-family: var(--font-family-body-bold);
+	font-size: var(--font-size-body-mobiel);
+}
+
+.woman_men_section h2 {
+	position: relative;
+	grid-column-start: 2;
+	grid-row-start: 2;
+	grid-row-end: -2;
+	text-align: center;
+	align-self: center;
+	z-index: 2;
+
+	/* styling*/
+	color: rgb(255, 255, 255);
+	font-family: var(--font-family-body-bold);
+	font-size: var(--font-size-body-mobiel);
+}
+
+.woman_men_section img {
+	position: relative;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: -1;
+	width: 100%;
+	max-width: 100%;
+	height: 15em;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.woman_men_section h1:hover {
+	text-decoration: underline;
+}
+
+.woman_men_section h2:hover {
+	text-decoration: underline;
+}
+
+/* fall collection sector */
+
+.fall_collection_section a {
+	text-decoration: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	position: relative;
+}
+
+.fall_collection_section h1 {
+	position: relative;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: -3;
+	text-align: center;
+	align-self: center;
+	z-index: 2;
+
+	/* styling */
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-family: var(--font-family-kop);
+	font-weight: 400;
+	font-size: var(--font-size-kop-mobiel);
+	color: var(--color-text-db);
+	text-shadow: 0 0 0px #fff,  0 0 5px #fff, 0 0 30px #fff, 0 0 0px #fff;
+}
+
+.fall_collection_section span {
+	position: relative;
+	grid-row-start: 2;
+	grid-column-start: 1;
+	text-align: center;
+	align-self: flex-end;
+	z-index: 2;
+
+	/*styling*/
+	text-decoration: underline;
+	font-family: var(--font-family-body-bold);
+	font-size: var(--font-size-body-mobiel);
+	color: var(--color-text-db);
+}
+
+.fall_collection_section img:nth-of-type(1) {
+	position: relative;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: -1;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	z-index: 0;
+}
+
+.fall_collection_section img:nth-of-type(2) {
+	display: none;
+}
+
+/* fall collection two items section */
+/* scroll gallery */
+/* bron : https://css-tricks.com/css-only-carousel/ */
+
+.fall_collection_twoitems {
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+}
+
+.fall_collection_twoitems ol {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	height: auto;
+
+	/*styling*/
+	list-style-type: none;
+}
+
+/*scroll mobile gallery */
+
+.fall_collection_twoitems ol::-webkit-scrollbar {
+	width: 0.5em;
+	height: 0.5em;
+}
+
+.fall_collection_twoitems ol::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 10px;
+}
+
+.fall_collection_twoitems ol::-webkit-scrollbar-track {
+	background: transparent;
+
+}
+
+.fall_collection_twoitems ol li {
+	scroll-snap-align: start;
+	flex-shrink: 0;
+	width: 100%;
+	height: auto;
+	margin-bottom: 1.5em;
+	transform-origin: center center;
+	transform: scale(1);
+	transition: transform 0.5s;
+}
+
+.fall_collection_twoitems h1 {
+	display: none;
+}
+
+.fall_collection_twoitems h2 {
+	margin-bottom: 0.5em;
+	
+	font-family: var(--font-family-kop);
+	font-weight: 500;
+	font-size: var(--font-size-items-mobiel);
+}
+
+.fall_collection_twoitems h3 {
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-body-mobiel);
+}
+
+.fall_collection_twoitems p {
+	margin: 0.5em;
+
+	color: var(--color-specialelement);
+	font-family: var(--font-family-body-bold);
+	font-size: var(--font-size-body-mobiel);
+}
+
+/* animatie add to bag button */
+/* bron :https://codepen.io/shooft/pen/VwqYdPY */
+
+.fall_collection_twoitems ol button {
+	padding: 0.5em 1em 0.5em 1em;
+
+	background-color: var(--color-specialelement);
+	border-radius: 5px;
+	color: var(--color-text-db);
+	font-family: var(--font-family-kop);
+	font-size: var(--font-size-body-mobiel);
+	box-shadow: 0px 2px 3px -2px black;
+}
+
+.fall_collection_twoitems ol button::before {
+	content: "+";
+	padding-right: .25rem;
+	font-weight: bold;
+}
 
 
+.fall_collection_twoitems ol img {
+	width: 25em;
+	height: 38em;
+	max-width: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+/* image carousel buttons */
+
+.fall_collection_twoitems .slide_knoppen {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	align-items: center;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+.fall_collection_twoitems .slide_knoppen a {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	margin: 1em 0 1em 0;
+	padding: 0.8em;
+
+	/*styling*/
+	background:var(--color-specialelement);
+	text-decoration: none;
+	color: white;
+	font-size: var(--font-size-body-mobiel);
+	font-family: var(--font-family-body);
+	box-shadow: 0px 3px 4px 0px black;
+}
+
+.fall_collection_twoitems .slide_knoppen a:active {
+	top: 1px;
+}
+
+.fall_collection_twoitems .slide_knoppen a:focus {
+	background-color: #000;
+}
 
 
+/*recycle section */
+
+.recycle_section {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr 2fr 2fr;
+
+	background-color: var(--color-darkmode1);
+}
+
+.recycle_section h1 {
+	position: relative;
+	grid-column-start: 1;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	z-index: 2;
+	padding: 1.5em 1.5em 1.5em 1.5em;
+	text-align: center;
+
+	/* styling */
+	line-height: 1.8em;
+	font-size: var(--font-size-body-mobiel);
+	color: var(--color-text-db);
+	font-family: var(--font-family-body);
+}
+
+.recycle_section img {
+	position: relative;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: -2;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+/* newsletter form */
+
+.newsletter_section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+	padding: 1.5em 0em 1.5em 0em;
+
+	border-bottom: 1px solid white;
+}
 
 
+.newsletter_section h1 {
+	align-self: center;
+	margin: auto;
+
+	/* styling */
+	letter-spacing: var(--letter-spacing);
+	text-transform: uppercase;
+	font-size: var(--font-size-kop-mobiel);
+	color: var(--color-text-db);
+	font-family: var(--font-family-kop);
+
+}
+
+.newsletter_section p {
+	text-align: center;
+
+    /*styling */
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-body-mobiel);
+	line-height: 1.5em;
+	color: var(--color-text-db);
+	padding: 0em 1.5em 0em 1.5em;
+}
+
+
+.newsletter_section input {
+	align-self: center;
+	justify-content: center;
+	width: 	15em;
+	height: auto;
+	box-sizing: border-box;
+	padding: 0.8em;
+
+	/*styling*/
+	font-size: var(--font-size-body-mobiel);
+	font-family: var(--font-family-body);
+	border: 2px solid var(--color-specialelement);
+	border-radius: 4px;
+}
+
+.newsletter_section label {
+	font-size: var(--font-size-body-mobiel);
+	font-family: var(--font-family-body);
+	font-weight: bolder;
+	color: var(--color-text-db);
+}
+
+.newsletter_section button {
+	/*styling*/
+	padding: 0.5em 1em 0.5em 1em;
+	border: 1px  solid var(--color-specialelement);
+	background-color: #fff;
+	border-radius: 5px;
+	color: var(--color-specialelement);
+	font-family: var(--font-family-kop);
+	font-weight: 600;
+	font-size: var(--font-size-body-mobiel);
+	box-shadow: 0px 2px 3px -2px black;
+}
+
+.newsletter_section button:active {
+	background-color: var(--color-specialelement);
+	color: #fff;
+}
+
+
+/* pagina 2 woman*/
+
+/*section all woman items*/
+
+.main_secondpage > h1 {
+	padding-left: 0.3em;
+
+	/*styling*/
+	font-family: var(--font-family-kop);
+	font-weight: 600;
+	font-size: var(--font-size-kop-mobiel);
+}
+
+.main_secondpage > h2 {
+	padding-left: 0.5em;
+	padding-top: 1.5em;
+
+	/*styling*/
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-body-mobiel);
+}
+
+.main_secondpage > h3 {
+	padding-right: 0.5em;
+	text-align: right;
+
+	/*styling*/
+	color: rgb(105, 105, 105);
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-body-mobiel);
+}
+
+
+.allwoman_section {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 2fr 2fr 2fr; 
+	text-align: center;
+}
+
+.allwoman_section h3 {
+	display: none;
+}
+
+.allwoman_section h4 {
+	font-family: var(--font-family-kop);
+	font-weight: 500;
+	font-size: var(--font-size-body-mobiel);
+}
+
+.allwoman_section img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	margin: 0;
+}
+
+.allwoman_section ul {
+	border: 1px solid black;
+	padding-bottom: 1.5em;
+}
+
+
+.allwoman_section ul li {
+	padding: 0;
+	list-style-type: none;
+}
+
+.allwoman_section ul li button {
+	padding: 1em;
+	margin: 0.5em;
+
+	/*styling*/
+	background-color: var(--color-specialelement);
+	border-radius: 5px;
+	color: var(--color-text-db);
+	font-family: var(--font-family-kop);
+	box-shadow: 0px 2px 3px -2px black;
+}
+
+.allwoman_section ul li button::before {
+	content: "+";
+	padding-right: .25rem;
+	font-weight: bold;
+}
+
+/* section loading more items */
+.moreItems {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2em;
+}
+
+.moreItems img {
+	width: 5em;
+	height: auto;
+}
+
+.moreItems button {
+	padding: 0.5em 1em 0.5em 1em;
+
+	border: 1px  solid var(--color-specialelement);
+	background-color: #fff;
+	border-radius: 5px;
+	color: var(--color-specialelement);
+	font-family: var(--font-family-kop);
+	font-weight: 600;
+	font-size: var(--font-size-body-mobiel);
+	box-shadow: 0px 2px 3px -2px black;
+}
+
+.moreItems button:active {
+	background-color: #000;
+	color: #fff;
+}
+
+/* footer website*/
+footer {
+	margin-top: auto;
+}
+
+footer nav {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	background-color: #000;
+}
+
+footer nav ul {
+	margin-top: 1.5em;
+
+	/*styling*/
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-body-mobiel);
+	list-style-type: none;
+	text-decoration: none;
+	color: var(--color-text-db);
+}
+
+footer nav ul:nth-of-type(1) {
+	align-items: flex-start;
+	margin-bottom: 0.8em;
+	margin-right: auto;
+}
+
+footer nav ul:nth-of-type(2) {
+	align-items: flex-start;
+	margin-right: auto;
+}
+
+footer nav ul:nth-of-type(3) {
+	align-self: flex-end;
+	width: 20em;
+
+	/*styling*/
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
+}
+
+footer nav ul:nth-of-type(4) {
+	display: flex;
+}
+
+footer nav ul li a:active {
+	background-color: var(--color-specialelement);
+}
+
+footer nav ul a:focus {
+	background-color: var(--color-specialelement);
+}
+
+footer nav ul li a {
+	text-decoration: none;
+	color: var(--color-text-db);
+}
+
+
+footer nav ul li {
+	padding: 1em;
+
+}
+
+footer nav ul img {
+	width: 2.5em;
+	height: auto;
+	margin: 0;
+}
+
+
+/* responsive desktop */
+	/* desktop nav menu */
+@media screen and (min-width: 55em) { 
+
+	/*nav menu*/
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--background-color-header);
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+	z-index: 999;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	gap: 1em;
+}
+
+header a img {
+	width: 8em;
+	height: auto;
+}
+
+li img {
+	width: 1.5em;
+	height: auto;
+}
+
+header nav ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+
+section ul:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	align-self: flex-start;
+}
+
+header nav ul:nth-of-type(1) {
+	order: 2;
+	align-items: center;
+	gap: 1em;
+}
+
+
+header nav ul li, a {
+	color: var(--color-text-db);
+	text-decoration: none;
+	border: none;
+}
+
+header nav ul li a:not(.shopping_bag):hover {
+	background: var(--color-specialelement);
+	padding: 0.5em;
+}
+
+
+.hamburger .openIcon {
+	display: none;
+}
+
+.hidden {
+	display: unset;
+}
+
+/* SHOP MEN OR WOMAN SECTION */
+
+.woman_men_section h1 {
+	font-size: var(--font-size-kop-desktop);
+}
+
+.woman_men_section h2 {
+	font-size: var(--font-size-kop-desktop);
+}
+
+/* Fall section home page */
+
+.fall_collection_section img:nth-of-type(1) {
+	display: none;
+}
+
+.fall_collection_section img:nth-of-type(2) {
+	display: block;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: -1;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	z-index: 0;
+}
+
+/* black week section */
+.blackweek_section img:first-of-type {
+	display: none;
+}
+
+.blackweek_section img:last-of-type {
+    display: block;
+	position: relative;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: -1;
+	width: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+/* fall collcetion 4 items */
+.fall_collection_twoitems ol  {
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+
+.fall_collection_twoitems ol li {
+	flex-shrink: 2;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border-right: #000 solid 1px;
+}
+
+.fall_collection_twoitems ol img {
+	max-width: 100%;
+	width: 30em;
+	height: 40em;
+	margin: 0;
+	padding: 0;
+}
+
+.fall_collection_twoitems .slide_knoppen {
+	display: none;
+}
+
+.recycle_section {
+	display: grid;
+	grid-template-rows: 0.5fr;
+}
+
+.recycle_section h1 {
+	padding: 1em 5em 1em 5em;
+}
+
+/* tweede pagina */
+
+.allwoman_section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr;
+}
+
+footer nav {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-content: center;
+	gap: 1em;
+	height: auto;
+}
+
+footer nav ul:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+}
+
+footer nav ul:nth-of-type(2) {
+	display: flex;
+	
+}
+
+footer nav ul:nth-of-type(3) {
+	display: flex;
+	align-self: center;
+}
+
+footer nav ul:nth-of-type(4) {
+	justify-content: center;
+	align-self: center;
+}
+
+footer nav ul li a:hover {
+	text-decoration: underline;
+}
+
+}
