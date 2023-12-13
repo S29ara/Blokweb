@@ -707,6 +707,10 @@ section ul li a:focus {
 	font-size: var(--font-size-body-mobiel);
 }
 
+.allwoman_section p {
+	font-family: var(--font-family-body);
+}
+
 .allwoman_section img {
 	width: 100%;
 	height: auto;
