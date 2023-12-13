@@ -545,10 +545,10 @@ bron: [https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-w
 <p>Tips van Marten</p>
 
 <img src="readme-images/schets_marten2.jpg" width="375px" alt="">
-#
+##
 <img src="readme-images/schets_marten2.2.jpg" width="375px" alt="">
 
-<p>Ik heb geprobeerd om de items in een logische volgorde te zetten en alle elementen in de nav te zetten. Omdat items ze allemaal classes hadden heb ik geprobeerd de classes weg te halen. Dit werd heel chaotisch en ik wist niet meer hoe ik dit kon fixen. Ik heb het uiteindelijk weggehaald.</p>
+<p>Ik heb geprobeerd om de items in een logische volgorde te zetten en alle elementen in de nav te zetten. Omdat de items allemaal classes hadden heb ik geprobeerd de classes weg te halen. Dit werd super chaotisch en ik wist niet meer hoe ik dit kon fixen. Ik heb het uiteindelijk weggehaald.</p>
 
 <details>
 <p>Ik ben toen weer gaan kijken voor tutorials die makkelijk te volgen zijn. Ik werd geïrriteerd, want dit duurde te lang. Ik ben toen hulp gaan vragen aan Abby en zij heeft mij goed op weg geholpen.</p>
@@ -556,7 +556,18 @@ bron: [https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-w
 <p>ik ben eerst zelf begonnen met het maken van een navigatie menu. Het liefst heb ik natuurlijk sub menu's, maar ik ging mij eerst focussen op het belangrijkste gedeelte.</p>
 
 <img src="readme-images/navmenu3_before.jpg" width="375px" alt="">
+##
+<p>Hier heb ik de elementen in de nav gezet als tip van Abby</p>
+<img src="readme-images/navmenu3_aangepast.jpg" width="375px" alt="">
+##
+<p>Vervolgens heb ik een class hidden toegevoegd om de list elementen te kunnen zien wanneer het menu uitklapt en weg te halen wanneer het menu inklapt.</p>
+<img src="readme-images/navmenu3_section.jpg" width="375px" alt="">
+##
+<img src="readme-images/navmenu3_website.jpg" width="375px" alt="">
+##
+<img src="readme-images/navmenu3_onderlogo.jpg" width="375px" alt="">
 
+<p>Vervolgens heeft Abby mij geholpen om de elementen met flexbox uit te lijnen.</p>
 
  
 </details>
