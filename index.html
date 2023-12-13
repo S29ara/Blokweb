@@ -1,48 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Sara Atilgan" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blok web website</title>
-    <link rel="stylesheet" href="https://use.typekit.net/mwd0kev.css" />
-    <link href="/styles/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Sara Atilgan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MISBHV club wear solutions</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mwd0kev.css">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/05_logo.svg">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
   <body>
+    <!--//MISBHV NAVIGATIE MENU//-->
     <header>
-      <a href="#"><img class="logo" src="#" alt="Logo misbhv" /></a>
-      <a href="#"><img src="#" /></a>
-      <a href="#"><img src="#" /></a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <nav>
+        <a href="#" aria-label="Press the home button"
+          ><img src="images/05_logo.svg" alt="Home"></a>
         <ul>
-          <li><a href="#">WOMAN</a></li>
-          <li><a href="#">MEN</a></li>
-          <li><a href="#">SPORT</a></li>
-          <li><a href="#">SALE</a></li>
-          <li><a href="#">SEASONS</a></li>
-          <li><a href="#">RECORDINGS</a></li>
+          <li>LOGIN</li>
+          <li>SIGN UP</li>
+          <li><img src="images/search-light.svg" alt="Search"></li>
+          <!--shopping bag animation-->
+          <li>
+            <a class="shopping_bag" href="#" aria-label="Shopping cart">
+              <img src="images/shopping-bag.svg" alt="">
+              <span class="empty">0</span>
+            </a>
+          </li>
+          <!--shopping bag animation-->
         </ul>
+        <button class="hamburger" aria-label="open menu">
+          <span class="openIcon material-icons">menu</span>
+          <span class="closeIcon material-icons">close</span>
+        </button>
+        <section class="hidden">
+          <h2>Menu items</h2>
+          <ul>
+            <li><a href="woman.html">WOMAN</a></li>
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">SPORT</a></li>
+            <li><a href="#">BLACKWEEK SALE</a></li>
+            <li><a href="#">RECORDINGS</a></li>
+          </ul>
+        </section>
       </nav>
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-      </label>
     </header>
     <main>
+      <!--//EERSTE GEDEELTE HOMEPAGINA (BLACKWEEK SALE)//-->
       <section class="blackweek_section">
-        <a href="#">
+        <a href="#" aria-label="Shop black week section">
           <h1>MISBHV | Club Wear Solutions</h1>
           <h2>Black week sale</h2>
           <p>Discount on selected items with black week label</p>
-          <span>See items</span>
-          <img
-            src="/images/banner_landingspage.png"
-            alt="A photo of 5 models wearing black week sale items" />
+          <span>SEE ITEMS</span>
+          <img src="/images/landingimage_small.jpg" alt="">
+          <img src="/images/landing_big.jpg" alt="">
         </a>
       </section>
+      <!--//SHOP MEN OR WOMAN SECTION//-->
+      <section class="woman_men_section">
+        <a href="woman.html" aria-label="shop men or woman">
+          <h1>SHOP MEN</h1>
+          <h2>SHOP WOMAN</h2>
+          <img src="/images/men_woman.png" alt="">
+        </a>
+      </section>
+      <!--//FALL COLLECTION BANNER//-->
+      <section class="fall_collection_section">
+        <a href="#">
+          <h1>Fall 23 collection</h1>
+          <span>SEE ITEMS</span>
+          <img src="/images/landingpage_herfst.png" alt="">
+          <img src="/images/fallcollection_bigscreen.jpg" alt="">
+        </a>
+      </section>
+      <!--//FALL COLLECTION DISPLAY ITEMS//-->
+      <section class="fall_collection_twoitems">
+        <h1>Fall collection items are shown below</h1>
+        <span class="slide_knoppen">
+          <a href="#slide-1" aria-label="first button for item 1">1</a>
+          <a href="#slide-2" aria-label="second button for item 2">2</a>
+          <a href="#slide-3" aria-label="third button for item 3">3</a>
+          <a href="#slide-4" aria-label="fourt button for item 4">4</a>
+        </span>
+        <ol>
+          <li id="slide-1">
+            <a href="#">
+              <img src="/images/fall_outfit1.png" alt="">
+            </a>
+            <h2>X Cracked Leather Jacket Brown</h2>
+            <h3>990 EUR</h3>
+            <p>Suistanble</p>
+            <button aria-label="Add item to the bag">ADD TO THE BAG</button>
+          </li>
+          <li id="slide-2">
+            <a href="#">
+              <img
+                src="/images/fall_outfit2.jpeg"
+                alt="A white/beige puffer vest with monogram pattern">
+              </a>
+            <h2>Jacquard Monogram Canvas Puffer Vest</h2>
+            <h3>690 EUR</h3>
+            <p>New in</p>
+            <button aria-label="Add item to the bag">ADD TO THE BAG</button>
+          </li>
+          <li id="slide-3">
+            <a href="#">
+              <img
+                src="/images/fall_item4.jpeg"
+                alt="A beige puffer jacket with zippers">
+              </a>
+            <h2>Alpha Industries X Keinemusik Jacket Beige</h2>
+            <h3>590 EUR</h3>
+            <p>New in</p>
+            <button aria-label="Add item to the bag">ADD TO THE BAG</button>
+          </li>
+          <li id="slide-4">
+            <a href="#">
+              <img
+                src="/images/fall_item5.jpeg"
+                alt="A grey leather jacket with orchid flowers on the front">
+              </a>
+            <h2>Robert Mapplethorpe 1997 Jacket Grey</h2>
+            <h3>800 EUR</h3>
+            <p>New in</p>
+            <button aria-label="Add item to the bag">ADD TO THE BAG</button>
+          </li>
+        </ol>
+      </section>
+      <!--//KORT STUKJE OVER MISBHV DUURZAAMHEID//-->
+      <section class="recycle_section">
+        <h1>
+          We are proud to introduce our 100% recyclable packaging. It is
+          produced using 100% green energy and made of 40% post-consumer waste.
+          It is recyclable, biodegradable as well as free of chlorine and acid.
+        </h1>
+        <img src="images/28_recycled.png" alt="">
+      </section>
     </main>
-
+    <!--//FOOTER MISBHV//-->
+    <footer>
+      <nav>
+        <!--//NEWSLETTER EMAIL SECTION//-->
+        <section class="newsletter_section">
+        <h1>Newsletter</h1>
+        <p>Subscribe to our newsletter and get a 10% off your first order!</p>
+        <form>
+          <label aria-label="enter your email" for="email">Email:</label>
+          <input
+            type="email"
+            placeholder="sara@example.com"
+            name="email"
+            id="email"
+            required>
+        </form>
+        <button type="submit">Subscribe</button>
+      </section>
+        <ul>
+          <li><a href="#">OUR STATEMENT</a></li>
+          <li><a href="#">RETAILERS</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">JOBS AT MISBHV</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">CUSTOMER CARE</a></li>
+          <li><a href="#">TERMS & CONDITIONS</a></li>
+          <li><a href="#">PRIVACY POLICY & COOKIES</a></li>
+        </ul>
+        <ul>
+          <li>SHIPPING TO: NETHERLANDS</li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://open.spotify.com/user/0c2hs6b18xrpt0rte23j5zksy?si=36df96b153fe480d">
+              <img
+                src="images/spotify.svg"
+                alt="Misbehave's spotify"
+                aria-label="press to see Misbehave's spotify account">
+              </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/misbhv/">
+              <img
+                src="images/instagram.svg"
+                alt="Misbehave's instagram"
+                aria-label="press to see Misbehave's instagram account">
+              </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@MISBHV_ClubWearSolutions">
+              <img
+                src="images/youtube.svg"
+                alt="Misbehave's youtube"
+                aria-label="press to see Misbehave's youtube channel">
+              </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
     <script defer src="/scripts/script.js"></script>
   </body>
 </html>
