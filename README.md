@@ -60,20 +60,6 @@ MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
 
 
 
-## Toegankelijkheidstest 1/2 (week 1)
-
-<details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-  <ul>
-  </ul>
-
-</details>
-
-
-
 ## Breakdownschets (week 1)
 
 <details>
