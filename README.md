@@ -1,4 +1,4 @@
-# Procesverslag
+<img width="383" alt="menu1 1" src="https://github.com/S29ara/Blokweb/assets/118111104/92b7ec34-6f0b-455e-9ee5-9561a3987d41"># Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -282,6 +282,12 @@ body {
 }
 ```
 
+<p>Mijn eigen code:</p>
+
+ ## <img src="readme-images/menu1.3.png" width="375px" alt="code eerste nav menu">
+ ## <img src="readme-images/menu1.2.png" width="375px" alt="code tweede nav menu">
+ ## <img src="readme-images/menu1.1.png" width="375px" alt="code derde nav menu">
+
 
 </details>
 
@@ -292,29 +298,15 @@ body {
 ## Voortgang 2 (week 3)
 
 <details>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+  <summary>Omdat ik wat achterliep, ben ik eerst gaan focussen op het rest van de content. Zo ben ik begonnen met het maken van mijn eerste section. Ik had als eerst position absolute en position relative toegepast. Dit werkte prima, maar dit is niet de juiste manier. Hier door kunnen elementen verplaatsen want ze zitten op elkaar en ze zijn gepositioneerd. </summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+   ## <img src="readme-images/section_blacweek1.png" width="375px" alt="section black week code">
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  <summary>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </summary>
+   ## <img src="readme-images/IMG_6401.jpeg" width="375px" alt="section black week code">
 
 </details>
 
