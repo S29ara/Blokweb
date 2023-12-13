@@ -356,13 +356,8 @@ Ik ben de volgende ochtend verder gegaan. Ik ben die dag ook weer verschillende 
 ##
 <img src="readme-images/twoitems16.png" width="375px" alt="fall collection two items">
 <p>De headings en images stonden al beter. Alles stond op zijn plek, maar de images waren niet dezelfde height. Dus ik heb inplaats van een height auto een 100% height gegeven.</p>
-
-  
+ 
 </details>
-
-
-
-
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
@@ -397,7 +392,6 @@ Ik ben de volgende ochtend verder gegaan. Ik ben die dag ook weer verschillende 
 
   <details>
   
-  
 
 </details>
 
@@ -408,31 +402,115 @@ Ik ben de volgende ochtend verder gegaan. Ik ben die dag ook weer verschillende 
 ## Voortgang 3 (week 4)
 
 <details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+  <summary>Ik ben vervolgens de rest van het content op de homepagina gaan doen. De recycle section ging moeiteloos, omdat er ook weinig elementen stonden. Later ben ik weer gaan focussen op de header.</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+### Recycle section
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+<img src="readme-images/recycle1.png" width="375px" alt="checklist wcag">
+##
+<img src="readme-images/recycle2.png" width="375px" alt="checklist wcag">
+##
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+<details>
+
+### Newsletter section
+De newsletter section child elementen heb ik uitgelijnd met text align center property. Dit ging goed, alleen kwam ik er achter dat het beter is om flexbox te gebruiken om elementen op een bepaalde manier uit te lijnen. 
+
+<img src="readme-images/newsletter1.png" width="375px" alt="checklist wcag">
+##
+<img src="readme-images/newsletter2.png" width="375px" alt="checklist wcag">
+##
+<img src="readme-images/newsletter3.png" width="375px" alt="checklist wcag">
+
+<p>Code flexbox newsletter section</p>
+<p>Ik heb vervolgens flexbox gebruikt en ze zo onder elkaar uitgelijnd met column property.</p>
+
+.newsletter_section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+	padding: 1.5em 0em 1.5em 0em;
+
+	border-bottom: 1px solid white;
+}
 
 
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+.newsletter_section h1 {
+	align-self: center;
+	margin: auto;
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+	/* styling */
+	letter-spacing: var(--letter-spacing);
+	text-transform: uppercase;
+	font-size: var(--font-size-kop-mobiel);
+	color: var(--color-text-db);
+	font-family: var(--font-family-kop);
+
+}
+
+.newsletter_section p {
+	text-align: center;
+
+    /*styling */
+	font-family: var(--font-family-body);
+	font-size: var(--font-size-body-mobiel);
+	line-height: 1.5em;
+	color: var(--color-text-db);
+	padding: 0em 1.5em 0em 1.5em;
+}
+
+
+.newsletter_section input {
+	align-self: center;
+	justify-content: center;
+	width: 	15em;
+	height: auto;
+	box-sizing: border-box;
+	padding: 0.8em;
+
+	/*styling*/
+	font-size: var(--font-size-body-mobiel);
+	font-family: var(--font-family-body);
+	border: 2px solid var(--color-specialelement);
+	border-radius: 4px;
+}
+
+.newsletter_section label {
+	font-size: var(--font-size-body-mobiel);
+	font-family: var(--font-family-body);
+	font-weight: bolder;
+	color: var(--color-text-db);
+}
+
+.newsletter_section button {
+	/*styling*/
+	padding: 0.5em 1em 0.5em 1em;
+	border: 1px  solid var(--color-specialelement);
+	background-color: #fff;
+	border-radius: 5px;
+	color: var(--color-specialelement);
+	font-family: var(--font-family-kop);
+	font-weight: 600;
+	font-size: var(--font-size-body-mobiel);
+	box-shadow: 0px 2px 3px -2px black;
+}
+
+.newsletter_section button:active {
+	background-color: var(--color-specialelement);
+	color: #fff;
+}
+
+
+
+  
+
 
 </details>
+
 
 
 
