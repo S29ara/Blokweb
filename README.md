@@ -573,7 +573,11 @@ bron: [https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-w
 <p>Ik heb daarna wat styling properties toegepast aan mijn nav elementen en ik heb vervolgens het menu een uitklap functie gegeven via javascript.</p>
 
 
-<img src="readme-images/navmenu3_onderlogo.jpg" width="375px" alt="">
+<img src="readme-images/new_nav.jpg" width="375px" alt="">
+##
+<img src="readme-images/new_nav2.jpg" width="375px" alt="">
+
+<p>Javascript</p>
 
 ```js
 openIcon.addEventListener("click", function () {
