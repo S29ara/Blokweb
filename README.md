@@ -1,4 +1,4 @@
-<img width="383" alt="menu1 1" src="https://github.com/S29ara/Blokweb/assets/118111104/92b7ec34-6f0b-455e-9ee5-9561a3987d41">
+
 # Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
@@ -306,8 +306,13 @@ body {
 
    ## <img src="readme-images/section_blacweek1.png" width="375px" alt="section black week code">
 
-  <summary>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </summary>
-   ## <img src="readme-images/IMG_6401.jpeg" width="375px" alt="section black week code">
+  <p>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </p>
+   ## <img src="readme-images/schets1_marten.jpeg" width="375px" alt="section black week code">
+   ## <img src="readme-images/section_blackweek1.2.png" width="375px" alt="section black week code">
+   ## <img src="readme-images/section_blackweek1.3.png" width="375px" alt="section black week code">
+<p>Ik ben vervolgens later nog is naar de code gaan kijken met Abby. Ik dacht misschien dat het aan de height lag en dat klopte ook.  Ik had de height weggehaald en de rows aangepast. Nu stond alles op de juiste plek.</p>
+   ## <img src="readme-images/section_blackweek1.4.png" width="375px" alt="section black week code">
+   ## <img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
 
 </details>
 
