@@ -34,14 +34,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
+  Ik ga proberen een verbeterde versie maken van de website: 
+
+[MISBHV | Club Wear Solutions™](https://misbhv.com/eu/en/)
+
+MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
 
   ### Je opdracht:
   https://misbhv.com/eu/en/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Homepagina MISBHV
   <img src="readme-images/homescreen_1.jpg" width="375px" alt="Eerste gedeelte van de home page met een banner met een link naar de sale producten">
   <img src="readme-images/homescreen_2.jpg" width="375px" alt="Tweede gedeelte home page met herfst artikelen">
+  <img src="readme-images/homescreen_5.jpg" width="375px" alt="Men or woman section">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Woman clothing new arrivals pagina  
