@@ -307,7 +307,7 @@ body {
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-   <img src="readme-images/section_blacweek1.png" width="375px" alt="section black week code">
+   <img src="readme-images/section_blackweek1.png" width="375px" alt="section black week code">
 
   <p>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </p>
   
@@ -325,9 +325,9 @@ body {
 <img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
 
 <p>Ik ben het vervolgens ook op andere sections gaan toepassen. </p>
-<img src="readme-images/woman_men_section.png" width="375px" alt="woman & men section code">
+<img src="readme-images/Woman_men_section.png" width="375px" alt="woman & men section code">
 
-<p>Bij de fall collection items section ging de grid ook extra rows aanmaken. Dit keer had ik geen height gebruikt, maar het stond nog steeds niet op de juiste plek. Ik ben toen gaan kijken wat er gebeurt als ik bij de items verschillende start & end rows en columns gebruik. </p>
+<p>Bij de fall collection items section ging de grid ook extra rows aanmaken. Dit keer had ik geen height gebruikt, maar het stond nog steeds niet op de juiste plek. Ik ben toen gaan kijken wat er gebeurt als ik bij de items verschillende start & end rows en columns gebruik.</p>
 <img src="readme-images/twoitems_1.png" width="375px" alt="fall collection two items">
 ##
 <img src="readme-images/twoitems_2.png" width="375px" alt="fall collection two items">
@@ -337,9 +337,25 @@ body {
 
 <p>Ik heb toen ook classes gebruikt voor de images, omdat ik misschien dacht dat ik de verkeerde css properties had genoteerd.</p>
 <img src="readme-images/twoitems_4.png" width="375px" alt="fall collection two items">
+
+<p>Html code fall collection items:</p>
+<img src="readme-images/twoitems_5.png" width="375px" alt="fall collection two items">
   
 </details>
+Ik ben de volgende ochtend verder gegaan. Ik ben die dag ook weer verschillende dingen gaan proberen. Ik heb de eerste image over alle rows geplaatst om te zien of dit ook echt wat deed. Verder heb ik height: auto; aan de images gegeven om te kijken of dat wat zou doen.
 
+<img src="readme-images/twoitems12.png" width="375px" alt="fall collection two items">
+##
+<img src="readme-images/twoitems13.png" width="375px" alt="fall collection two items">
+
+<p>Dit werkte allemaal niet, dus ik heb de section rows aangepast en de rest van de elementen gepositioneerd in verschillende rows</p>
+
+<img src="readme-images/twoitems14.png" width="375px" alt="fall collection two items">
+##
+<img src="readme-images/twoitems15.png" width="375px" alt="fall collection two items">
+##
+<img src="readme-images/twoitems16.png" width="375px" alt="fall collection two items">
+<p>De headings en images stonden al beter. Alles stond op zijn plek, maar de images waren niet dezelfde height. Dus ik heb inplaats van een height auto een 100% height gegeven.</p>
 
   
 </details>
