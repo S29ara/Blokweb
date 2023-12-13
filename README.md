@@ -68,9 +68,6 @@ MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   <ul>
-  <li>Er zijn vele vormen van slechtziend zijn</li>
-    <li>Meerdere vormen van beperkt zijn</li>
-    <li>Veel websites maken nog geen gebruik van een duidelijke opzet (code) voor screenreaders</li>
   </ul>
 
 </details>
@@ -286,8 +283,12 @@ body {
 <p>Mijn eigen code:</p>
 
  <img src="readme-images/menu1.3.png" width="375px" alt="code eerste nav menu">
+
+ ##
  
  <img src="readme-images/menu1.2.png" width="375px" alt="code tweede nav menu">
+
+ ##
 
  <img src="readme-images/menu1.1.png" width="375px" alt="code derde nav menu">
 
@@ -308,17 +309,19 @@ body {
 
    <img src="readme-images/section_blacweek1.png" width="375px" alt="section black week code">
 
-   <details>
   <p>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </p>
   
-   <img src="readme-images/schets1_marten.jpeg" width="375px" alt="section black week code">
+   <img src="readme-images/schets1_marten.jpg" width="375px" alt="section black week code">
+   ##
    <img src="readme-images/section_blackweek1.2.png" width="375px" alt="section black week code">
+   ##
    <img src="readme-images/section_blackweek1.3.png" width="375px" alt="section black week code">
 
    <details>
    
 <p>Ik ben vervolgens later nog is naar de code gaan kijken met Abby. Ik dacht misschien dat het aan de height lag en dat klopte ook.  Ik had de height weggehaald en de rows aangepast. Nu stond alles op de juiste plek.</p>
 <img src="readme-images/section_blackweek1.4.png" width="375px" alt="section black week code">
+##
 <img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
   
 
@@ -331,10 +334,32 @@ body {
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+  <summary>Tijdens de les hebben we met verschillende toegankelijkheidsbrillen gekeken naar onze gekozen websites. Hierbij heb ik met Abby een checklist ingevuld over toegankelijkheid.</summary>
+
+<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+##
+<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+##
+<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+##
+<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+##
+<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+
+
+  
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+   <ul>
+  <li>Er zijn vele vormen van slechtziend zijn</li>
+    <li>Meerdere vormen van beperkt zijn</li>
+    <li>Veel websites maken nog geen gebruik van een duidelijke opzet (code) voor screenreaders</li>
+  </ul>
+
+  <details>
+  
+  
 
 </details>
 
