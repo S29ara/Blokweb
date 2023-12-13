@@ -311,7 +311,7 @@ body {
 
   <p>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </p>
   
-   <img src="readme-images/schets1_marten.jpg" width="375px" alt="section black week code">
+   <img src="readme-images/schets1_marten.jpg" width="375px" alt="schets Marten">
    ##
    <img src="readme-images/section_blackweek1.2.png" width="375px" alt="section black week code">
    ##
@@ -319,12 +319,29 @@ body {
 
    <details>
    
-<p>Ik ben vervolgens later nog is naar de code gaan kijken met Abby. Ik dacht misschien dat het aan de height lag en dat klopte ook.  Ik had de height weggehaald en de rows aangepast. Nu stond alles op de juiste plek.</p>
+<p>Ik ben vervolgens later nog is naar de code gaan kijken met Abby. Ik dacht misschien dat het aan de height lag en dat klopte ook. Ik had de height weggehaald en de rows aangepast. Nu stond alles op de juiste plek.</p>
 <img src="readme-images/section_blackweek1.4.png" width="375px" alt="section black week code">
 ##
 <img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
-  
 
+<p>Ik ben het vervolgens ook op andere sections gaan toepassen. </p>
+<img src="readme-images/woman_men_section.png" width="375px" alt="woman & men section code">
+
+<p>Bij de fall collection items section ging de grid ook extra rows aanmaken. Dit keer had ik geen height gebruikt, maar het stond nog steeds niet op de juiste plek. Ik ben toen gaan kijken wat er gebeurt als ik bij de items verschillende start & end rows en columns gebruik. </p>
+<img src="readme-images/twoitems_1.png" width="375px" alt="fall collection two items">
+##
+<img src="readme-images/twoitems_2.png" width="375px" alt="fall collection two items">
+
+<p>Ik heb verschillende dingen geprobeerd, maar nog steed kwam de img en de andere child elementen niet op de juiste plek te staan. Hier raakte ik frustreert van, maar ik bleef dingen uitproberen.</p>
+<img src="readme-images/twoitems_3.png" width="375px" alt="fall collection two items">
+
+<p>Ik heb toen ook classes gebruikt voor de images, omdat ik misschien dacht dat ik de verkeerde css properties had genoteerd.</p>
+<img src="readme-images/twoitems_4.png" width="375px" alt="fall collection two items">
+  
+</details>
+
+
+  
 </details>
 
 
@@ -334,17 +351,17 @@ body {
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>Tijdens de les hebben we met verschillende toegankelijkheidsbrillen gekeken naar onze gekozen websites. Hierbij heb ik met Abby een checklist ingevuld over toegankelijkheid.</summary>
+  <summary>Tijdens de les hebben we met verschillende toegankelijkheidsbrillen gekeken naar onze gekozen websites. Hierbij heb ik met Abby een WCAG checklist ingevuld over toegankelijkheid.</summary>
 
-<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+<img src="readme-images/checklist1.jpg" width="375px" alt="checklist wcag">
 ##
-<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+<img src="readme-images/checklist2.jpg" width="375px" alt="checklist wcag">
 ##
-<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+<img src="readme-images/checklist3.jpg" width="375px" alt="checklist wcag">
 ##
-<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+<img src="readme-images/checklist4.jpg" width="375px" alt="checklist wcag">
 ##
-<img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
+<img src="readme-images/checklist5.jpg" width="375px" alt="checklist wcag">
 
 
   
@@ -355,7 +372,12 @@ body {
   <li>Er zijn vele vormen van slechtziend zijn</li>
     <li>Meerdere vormen van beperkt zijn</li>
     <li>Veel websites maken nog geen gebruik van een duidelijke opzet (code) voor screenreaders</li>
+    <li>mijn website maakt veel gebruik van divs en geen headings</li>
+     <li>Je kan items op mijn uitgekozen website niet makkelijk toevoegen aan je winkelwagen</li>
+     <li>Ook maakt de website veel gebruik van image banners zonder alternative text</li>
   </ul>
+
+  <p>Ik wil zoveel mogelijk dingen aanpassen als dat lukt qua tijd.</p>
 
   <details>
   
