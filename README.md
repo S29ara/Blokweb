@@ -43,15 +43,14 @@ MiSBHV is een kleding merk en op hun website verkopen ze verschillende items.
   ### Je opdracht:
   https://misbhv.com/eu/en/
 
-  #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepagina MISBHV
+  #### Screenshot(s) van de eerste pagina (small screen homepagina misbhv): 
   <img src="readme-images/homescreen_1.jpg" width="375px" alt="Eerste gedeelte van de home page met een banner met een link naar de sale producten">
   ##
   <img src="readme-images/homescreen_2.jpg" width="375px" alt="Tweede gedeelte home page met herfst artikelen">
   ##
   <img src="readme-images/homescreen_5.jpg" width="375px" alt="Men or woman section">
 
-  #### Screenshot(s) van de tweede pagina (small screen):
+  #### Screenshot(s) van de tweede pagina (small screen all woman clothing):
   All woman clothing pagina
   <img src="readme-images/pagina2_woman.jpg" width="375px" alt="Tweede gedeelte home page met herfst artikelen">
  
