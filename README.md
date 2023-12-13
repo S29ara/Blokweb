@@ -307,6 +307,7 @@ body {
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  ### black week section
    <img src="readme-images/section_blackweek1.png" width="375px" alt="section black week code">
 
   <p>Met hulp van Marten heb ik display grid gebruikt voor mijn section. Dit ging eerste instantie niet helemaal makkelijk, want de grid liet steeds extra rows zien terwijl ik de rows heb aangegeven met grid-template-rows. We wisten beide niet waar dit aan lag. </p>
@@ -316,16 +317,17 @@ body {
    <img src="readme-images/section_blackweek1.2.png" width="375px" alt="section black week code">
    ##
    <img src="readme-images/section_blackweek1.3.png" width="375px" alt="section black week code">
-
-   <details>
    
 <p>Ik ben vervolgens later nog is naar de code gaan kijken met Abby. Ik dacht misschien dat het aan de height lag en dat klopte ook. Ik had de height weggehaald en de rows aangepast. Nu stond alles op de juiste plek.</p>
 <img src="readme-images/section_blackweek1.4.png" width="375px" alt="section black week code">
 ##
 <img src="readme-images/section_blackweek1.5.png" width="375px" alt="section black week code">
 
-<p>Ik ben het vervolgens ook op andere sections gaan toepassen. </p>
+<p>Ik ben vervolgens meerdere grid sections gaan maken. </p>
 <img src="readme-images/Woman_men_section.png" width="375px" alt="woman & men section code">
+
+### Fall collection items section
+<details>
 
 <p>Bij de fall collection items section ging de grid ook extra rows aanmaken. Dit keer had ik geen height gebruikt, maar het stond nog steeds niet op de juiste plek. Ik ben toen gaan kijken wat er gebeurt als ik bij de items verschillende start & end rows en columns gebruik.</p>
 <img src="readme-images/twoitems_1.png" width="375px" alt="fall collection two items">
@@ -389,15 +391,9 @@ Ik ben de volgende ochtend verder gegaan. Ik ben die dag ook weer verschillende 
   </ul>
 
   <p>Ik wil zoveel mogelijk dingen aanpassen als dat lukt qua tijd.</p>
-
-  <details>
   
 
 </details>
-
-
-
-
 
 ## Voortgang 3 (week 4)
 
@@ -409,9 +405,9 @@ Ik ben de volgende ochtend verder gegaan. Ik ben die dag ook weer verschillende 
 
 ### Recycle section
 
-<img src="readme-images/recycle1.png" width="375px" alt="checklist wcag">
+<img src="readme-images/recycle1.png" width="375px" alt="">
 ##
-<img src="readme-images/recycle2.png" width="375px" alt="checklist wcag">
+<img src="readme-images/recycle2.png" width="375px" alt="">
 ##
 
 <details>
@@ -419,15 +415,16 @@ Ik ben de volgende ochtend verder gegaan. Ik ben die dag ook weer verschillende 
 ### Newsletter section
 De newsletter section child elementen heb ik uitgelijnd met text align center property. Dit ging goed, alleen kwam ik er achter dat het beter is om flexbox te gebruiken om elementen op een bepaalde manier uit te lijnen. 
 
-<img src="readme-images/newsletter1.png" width="375px" alt="checklist wcag">
+<img src="readme-images/newsletter1.png" width="375px" alt="">
 ##
-<img src="readme-images/newsletter2.png" width="375px" alt="checklist wcag">
+<img src="readme-images/newsletter2.png" width="375px" alt="">
 ##
-<img src="readme-images/newsletter3.png" width="375px" alt="checklist wcag">
+<img src="readme-images/newsletter3.png" width="375px" alt="">
 
 <p>Code flexbox newsletter section</p>
 <p>Ik heb vervolgens flexbox gebruikt en ze zo onder elkaar uitgelijnd met column property.</p>
 
+```css
 .newsletter_section {
 	display: flex;
 	flex-direction: column;
@@ -437,7 +434,6 @@ De newsletter section child elementen heb ik uitgelijnd met text align center pr
 
 	border-bottom: 1px solid white;
 }
-
 
 .newsletter_section h1 {
 	align-self: center;
@@ -462,7 +458,6 @@ De newsletter section child elementen heb ik uitgelijnd met text align center pr
 	color: var(--color-text-db);
 	padding: 0em 1.5em 0em 1.5em;
 }
-
 
 .newsletter_section input {
 	align-self: center;
@@ -504,11 +499,49 @@ De newsletter section child elementen heb ik uitgelijnd met text align center pr
 	color: #fff;
 }
 
+```
+
+</details>
+
+### Navigatie menu:
+<details>Ik ben daarna weer verder gegaan met mijn navigatie menu. Ik ben onderzoek gaan doen naar tutorials die ook gebruik maken van submenu’s en die responsive zijn. Ik kwam uit op eentje die gebruik maakt van flexbox en die een hamburger animatie heeft. 
+	
+bron: [https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535t](https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535t) 
+
+<p>Met deze navigatie menu had ik wat moeite, omdat deze tutorial ook gebruik maakte van heel veel classes. Ook de hoeveelheid elementen die ik in mijn header had staan maakte het chaotisch. Ik begon eerst met het aanpassen van verschillende elementen zodat het voor mij er logisch uit ziet en dat er zo min mogelijk classes worden gebruikt. Dit ging niet helemaal goed, want de subitems kreeg ik niet te zien (zie voorbeeld hier onder). Daarom ben ik uiteindelijk verder gegaan met alle elementen die ze gebruiken in de tutorial.</p>
+
+<img src="readme-images/navmenu2.png" width="375px" alt="">
+
+<p>Zo had ik verschillende items en subitems. Ook had ik een aparte ul voor het logo, de winkelwagen, de search button en de log in en sign up list items. Dit allemaal zat in een navigatie en in een header.</p>
+
+<img src="readme-images/navmenu2_html.png" width="375px" alt="">
+
+<p>CSS styling:</p>
+
+<img src="readme-images/navmenu2_basicstyling.png" width="375px" alt="">
+##
+<img src="readme-images/navmenu2_mobile.png" width="375px" alt="">
+##
+<img src="readme-images/navmenu2_submenu.png" width="375px" alt="">
+##
+<img src="readme-images/navmenu2_desktop.png" width="375px" alt="">
 
 
-  
+<p>Javascript hamburger animatie en menu openen</p>
+<img src="readme-images/navmenu2_js.png" width="375px" alt="">
+
+<p>De hamburger animatie werkte goed alleen de elementen waren niet op de juiste plek gepositioneerd. Ik probeerde dit zelf nog te veranderen, maar dat ging ook niet helemaal zoals ik het wou. Op groter scherm kreeg ik ook een groot wit vlak te zien. Waarschijnlijk door de background die op none stond, maar dit stond ook in de tutorial. </p>
+
+<img src="readme-images/navmenu2_smallscreen.png" width="375px" alt="">
+##
+<img src="readme-images/navmenu2_bigscreen.png" width="375px" alt="">
 
 
+
+
+
+
+	
 </details>
 
 
