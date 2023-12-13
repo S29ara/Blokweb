@@ -334,7 +334,7 @@ body {
 ##
 <img src="readme-images/twoitems_2.png" width="375px" alt="fall collection two items">
 
-<p>Ik heb verschillende dingen geprobeerd, maar nog steed kwam de img en de andere child elementen niet op de juiste plek te staan. Hier raakte ik frustreert van, maar ik bleef dingen uitproberen.</p>
+<p>Ik heb verschillende dingen geprobeerd, maar nog steed kwam de img en de andere child elementen niet op de juiste plek te staan. Hier raakte ik gefrustreerd van, maar ik bleef het proberen.</p>
 <img src="readme-images/twoitems_3.png" width="375px" alt="fall collection two items">
 
 <p>Ik heb toen ook classes gebruikt voor de images, omdat ik misschien dacht dat ik de verkeerde css properties had genoteerd.</p>
@@ -549,6 +549,14 @@ bron: [https://webdesign.tutsplus.com/how-to-build-a-responsive-navigation-bar-w
 <img src="readme-images/schets_marten2.2.jpg" width="375px" alt="">
 
 <p>Ik heb geprobeerd om de items in een logische volgorde te zetten en alle elementen in de nav te zetten. Omdat items ze allemaal classes hadden heb ik geprobeerd de classes weg te halen. Dit werd heel chaotisch en ik wist niet meer hoe ik dit kon fixen. Ik heb het uiteindelijk weggehaald.</p>
+
+<details>
+<p>Ik ben toen weer gaan kijken voor tutorials die makkelijk te volgen zijn. Ik werd geïrriteerd, want dit duurde te lang. Ik ben toen hulp gaan vragen aan Abby en zij heeft mij goed op weg geholpen.</p>
+
+<p>ik ben eerst zelf begonnen met het maken van een navigatie menu. Het liefst heb ik natuurlijk sub menu's, maar ik ging mij eerst focussen op het belangrijkste gedeelte.</p>
+
+<img src="readme-images/navmenu3_before.jpg" width="375px" alt="">
+
 
  
 </details>
